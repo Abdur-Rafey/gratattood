@@ -5,9 +5,15 @@ package com.gratattood.gratattood.app;
  */
 
 public class AppConfig {
+    // Server Base URL
+    public static String BASE_URL = "http://demo.byterace.com/gratattood/api/";
+
     // Server user login url
-    public static String URL_LOGIN = "http://demo.byterace.com/gratattood/api/login_user.php";
+    public static String URL_LOGIN = BASE_URL + "login_user.php";
 
     // Server user register url
-    public static String URL_REGISTER = "http://demo.byterace.com/gratattood/api/register_user.php";
+    public static String URL_REGISTER = BASE_URL + "register_user.php";
+
+    // Server get all tattoos url
+    public static String URL_GET_ALL_TATTOOS = BASE_URL + "get_all_tattoos.php";
 }
