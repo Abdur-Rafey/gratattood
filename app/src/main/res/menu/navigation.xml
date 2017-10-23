@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Mic_btn"
+        android:icon="@drawable/voice"
+        android:title=" " />
+
+    <item
+        android:id="@+id/music_btn"
+        android:icon="@drawable/musical_note"
+        android:title=" " />
+
+    <item
+        android:id="@+id/share_btn"
+        android:icon="@drawable/share"
+        android:title=" " />
+
+</menu>

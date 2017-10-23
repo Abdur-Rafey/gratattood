@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLifhtGrey"
+    tools:context="com.gratattood.gratattood.Design_Activity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:weightSum="1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_weight="0.92">
+
+        <ImageView
+            android:id="@+id/backArrow_Message_Activity"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@null"
+            android:paddingRight="20dp"
+            app:srcCompat="@drawable/ic_navigation_left_from_media_chooser_header_bar"
+            />
+
+
+        <TextView
+            android:id="@+id/title_textView_toolbar_MediaChooser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:paddingTop="8dp"
+            android:layout_toRightOf="@id/backArrow_Message_Activity"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Design"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
+
+
+    <Button
+        android:id="@+id/extra_Ins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXTRA INSPIRATION"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:gravity="center"></TextView>
+
+</LinearLayout>
+
+        />
+</RelativeLayout>

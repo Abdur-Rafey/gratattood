@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/colorWhite">
+    <ImageView
+        android:id="@+id/img_cart"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:scaleType="centerCrop"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="10dp"/>
+    <LinearLayout
+        android:id="@+id/linear_cart1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:layout_toRightOf="@id/img_cart">
+        <TextView
+            android:id="@+id/txtdesign_Cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Design:"
+            android:textColor="@color/colorblue"
+            android:textSize="15dp"
+            android:layout_weight="50"/>
+        <TextView
+            android:id="@+id/txtComent_Cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Awesome Design"
+            android:layout_marginLeft="5dp"
+            android:textSize="15dp"
+            android:textColor="@color/colorblue"
+            android:layout_weight="50"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_cart2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:paddingTop="00dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:layout_toRightOf="@id/img_cart"
+        android:layout_below="@id/linear_cart1">
+        <TextView
+            android:id="@+id/txtQuantity_Cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity:"
+            android:textSize="15dp"
+            android:textColor="@color/colorblue"
+            android:layout_weight="50"/>
+        <TextView
+            android:id="@+id/txtQuantity_number_Cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 "
+            android:layout_marginLeft="5dp"
+            android:textSize="15dp"
+            android:textColor="@color/colorblue"
+            android:gravity="left"
+            android:layout_weight="50"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+
+        android:layout_toRightOf="@id/img_cart"
+        android:layout_below="@id/linear_cart2">
+        <TextView
+            android:id="@+id/txtPrice_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$39.82 "
+            android:textSize="15dp"
+            android:textColor="@color/colorblue"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold" />
+        </LinearLayout>
+
+</RelativeLayout>

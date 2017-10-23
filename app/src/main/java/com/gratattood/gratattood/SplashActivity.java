@@ -1,43 +1,36 @@
 package com.gratattood.gratattood;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private Boolean isLoggedIn;
+    private final int SPLASH_DISPLAY_LENGTH = 1000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        new Handler().postDelayed(new Runnable() {
+        new Handler().postDelayed(new Runnable(){
             @Override
             public void run() {
-                startNextActivity();
+                /* Create an Intent that will start the Menu-Activity. */
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
+                finish();
             }
-        }, 2000);
-    }
+        }, SPLASH_DISPLAY_LENGTH);
 
-    private void startNextActivity(){
-        if (checkLogInStatus()){
-//            Intent gotoMainActivity = new Intent(getBaseContext(), MainActivity.class);
-//            startActivity(gotoMainActivity);
-        } else {
-            Intent gotoLogInActivity = new Intent(getBaseContext(), SignInActivity.class);
-            startActivity(gotoLogInActivity);
-        }
-        finish();
-    }
 
-    private Boolean checkLogInStatus(){
-        return false;
+
+
+
+
+
+
+
+
     }
 }

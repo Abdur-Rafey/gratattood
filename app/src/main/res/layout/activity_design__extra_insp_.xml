@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.gratattood.gratattood.Design_Activity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:weightSum="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="0.92">
+
+            <ImageView
+                android:id="@+id/backArrow_Message_Activity"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@null"
+                android:paddingRight="20dp"
+                app:srcCompat="@drawable/ic_navigation_left_from_media_chooser_header_bar"
+                />
+
+
+            <TextView
+                android:id="@+id/title_textView_toolbar_MediaChooser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingTop="8dp"
+                android:layout_toRightOf="@id/backArrow_Message_Activity"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Design"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                />
+            <ImageView
+                android:id="@+id/tick_image_Design"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@null"
+                android:paddingRight="20dp"
+                app:srcCompat="@drawable/tick"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+<ImageView
+    android:id="@+id/img_design"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/pic_6"
+    android:scaleType="centerCrop"
+    android:layout_below="@id/toolbar"
+
+     />
+
+    <ImageView
+        android:id="@+id/img_Sine"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/pic_8"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="80dp"
+
+
+        />
+    <LinearLayout
+        android:id="@+id/linear_design"
+        android:layout_below="@id/img_design"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:weightSum="99.88"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <View
+            android:id="@+id/color1"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#F5B7B1">
+
+        </View>
+        <View
+            android:id="@+id/color2"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#EC7063">
+
+        </View>
+        <View
+            android:id="@+id/color3"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#C0392B">
+
+        </View>
+        <View
+            android:id="@+id/color4"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#C39BD3">
+
+        </View>
+        <View
+            android:id="@+id/color5"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#F8C471">
+
+        </View>
+        <View
+            android:id="@+id/color6"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#D35400">
+
+        </View>
+        <View
+            android:id="@+id/color7"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#FDFEFE">
+
+        </View>
+        <View
+            android:id="@+id/color8"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#F7DC6F">
+
+        </View>
+        <View
+            android:id="@+id/color9"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#F1C40F">
+
+        </View>
+        <View
+            android:id="@+id/color10"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#D5F5E3">
+
+        </View>
+        <View
+        android:id="@+id/color11"
+        android:layout_width="0dp"
+        android:layout_weight="4.54"
+        android:layout_height="match_parent"
+        android:background="#58D68D">
+
+        </View>
+
+        <View
+            android:id="@+id/color12"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#196F3D">
+
+        </View>
+        <View
+            android:id="@+id/color13"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#85929E">
+
+        </View>
+        <View
+            android:id="@+id/color14"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#76D7C4">
+
+        </View>
+        <View
+            android:id="@+id/color15"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#EBDEF0">
+
+        </View>
+        <View
+            android:id="@+id/color16"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#1A5276">
+
+        </View>
+        <View
+            android:id="@+id/color17"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#2471A3">
+
+        </View>
+        <View
+            android:id="@+id/color18"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#7FB3D5">
+
+        </View>
+        <View
+            android:id="@+id/color19"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#99A3A4">
+
+        </View>
+        <View
+            android:id="@+id/color20"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#CCD1D1"
+            >
+
+        </View>
+        <View
+            android:id="@+id/color21"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#ABB2B9">
+
+        </View>
+
+        <View
+            android:id="@+id/color22"
+            android:layout_width="0dp"
+            android:layout_weight="4.54"
+            android:layout_height="match_parent"
+            android:background="#000000">
+
+        </View>
+    </LinearLayout>
+
+
+</RelativeLayout>

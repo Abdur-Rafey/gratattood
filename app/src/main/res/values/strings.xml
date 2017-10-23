@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Gratattood</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main3">MainActivity3</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_tabbed">TabbedAc</string>
+    <string name="title_activity_main_navigation">MainActivityNavigation</string>
+
+    <string name="spinner">Choose a country</string>
+    <string-array name="spinner_options">
+        <item>option 1</item>
+        <item>option 2</item>
+        <item>option 3</item>
+
+    </string-array>
+
 </resources>

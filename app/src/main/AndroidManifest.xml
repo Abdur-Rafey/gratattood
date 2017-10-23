@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SplashActivity"
+            android:name=".Checkout_Activity"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -21,8 +21,23 @@
         </activity>
         <activity android:name=".SignInActivity" />
         <activity android:name=".SignUpActivity" />
-        <activity android:name=".MainActivity"
-            android:theme="@style/SplashTheme"></activity>
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/title_activity_main3" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Activity_Profile" />
+        <activity android:name=".Activity_Follow_Feed" />
+        <activity android:name=".Tattoo_Activity" />
+        <activity android:name=".Record_Audio_Activity" />
+        <activity android:name=".LocalAudioGallery_Activity" />
+        <activity android:name=".Cart_Activity" />
+        <activity android:name=".Design_Activity" />
+        <activity android:name=".Design_ExtraINSP_Activity" />
+        <activity android:name=".Design_Save_Activity" />
+        <activity android:name=".Purchase_Activity" />
+        <activity android:name=".Stencil_Activity" />
+        <activity android:name=".Share_Activity" />
+        <activity android:name=".SaveAudio_Activity"></activity>
     </application>
 
 </manifest>
