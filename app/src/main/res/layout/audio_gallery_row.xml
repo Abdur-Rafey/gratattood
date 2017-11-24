@@ -5,8 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="70dp"
     android:paddingTop="10dp"
-    android:background="@color/colorblue"
+    android:background="?android:attr/activatedBackgroundIndicator"
     android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
     android:paddingBottom="10dp"
     android:weightSum="100">
 
@@ -30,7 +31,7 @@
         android:weightSum="100">
 
         <TextView
-            android:id="@+id/txtdate_AudioGallery"
+            android:id="@+id/txtname_AudioGallery"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
@@ -79,7 +80,7 @@
             android:textColor="@color/colorGrey" />
     </LinearLayout>
 
-    <Spinner
+    <com.gratattood.gratattood.helper.NDSpinner
         android:id="@+id/spinner_AudioGallery"
         android:layout_width="0dp"
         android:layout_height="20dp"

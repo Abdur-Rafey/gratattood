@@ -1,4 +1,4 @@
-package com.gratattood.gratattood;
+package com.gratattood.gratattood.adapter;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -9,6 +9,12 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.android.volley.Response;
+import com.android.volley.toolbox.ImageRequest;
+import com.gratattood.gratattood.R;
+import com.gratattood.gratattood.app.AppController;
+import com.gratattood.gratattood.model.Model_Cart;
 
 import java.util.ArrayList;
 
@@ -42,9 +48,8 @@ public class MyCartListAdapter extends ArrayAdapter<Model_Cart> {
 
         if (p != null) {
 
-            TextView tt1 = (TextView) v.findViewById(R.id.txtdesign_Cart);
+
             TextView tt2 = (TextView) v.findViewById(R.id.txtComent_Cart);
-            TextView tt3 = (TextView) v.findViewById(R.id.txtQuantity_Cart);
             TextView tt4 = (TextView) v.findViewById(R.id.txtQuantity_number_Cart);
             TextView tt5 = (TextView) v.findViewById(R.id.txtPrice_cart);
             ImageView im1= (ImageView) v.findViewById(R.id.img_cart);
@@ -53,18 +58,8 @@ public class MyCartListAdapter extends ArrayAdapter<Model_Cart> {
                     R.drawable.pic_6);
 
 
-
-
-            if (tt1 != null) {
-                tt1.setText(p.getDesign());
-            }
-
-            if (tt2 != null) {
+          if (tt2 != null) {
                 tt2.setText(p.getComent());
-            }
-
-            if (tt3 != null) {
-                tt3.setText(p.getQuantity());
             }
 
             if (tt4 != null) {
@@ -77,6 +72,7 @@ public class MyCartListAdapter extends ArrayAdapter<Model_Cart> {
 
             if (im1 != null) {
 
+                getBitmapFromURLAndSetImage(p.getTattoo(),im1);
                 im1.setImageBitmap(icon);
             }
 
@@ -85,6 +81,20 @@ public class MyCartListAdapter extends ArrayAdapter<Model_Cart> {
         }
 
         return v;
+    }
+
+
+    public void getBitmapFromURLAndSetImage(String src, final ImageView iv) {
+        ImageRequest ir = new ImageRequest(src,
+                new Response.Listener<Bitmap>() {
+                    @Override
+                    public void onResponse(Bitmap response) {
+                        iv.setImageBitmap(response);
+
+                    }
+                }, 0, 0,null, null);
+        AppController.getInstance().addToRequestQueue(ir, "test_image_req");
+
     }
 
 }

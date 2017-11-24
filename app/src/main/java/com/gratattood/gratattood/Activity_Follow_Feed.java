@@ -5,6 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 import android.widget.Spinner;
 
+import com.gratattood.gratattood.adapter.MyListAdapter;
+import com.gratattood.gratattood.model.Model_Follow_Feed;
+
 import java.util.ArrayList;
 
 public class Activity_Follow_Feed extends AppCompatActivity {

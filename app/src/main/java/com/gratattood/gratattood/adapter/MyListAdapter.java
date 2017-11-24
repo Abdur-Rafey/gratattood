@@ -1,4 +1,4 @@
-package com.gratattood.gratattood;
+package com.gratattood.gratattood.adapter;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -10,6 +10,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import com.gratattood.gratattood.helper.CustomOnItemSelectedListener;
+import com.gratattood.gratattood.R;
+import com.gratattood.gratattood.model.Model_Follow_Feed;
 
 import java.util.ArrayList;
 
@@ -79,7 +83,7 @@ public class MyListAdapter extends ArrayAdapter<Model_Follow_Feed> {
            if(spinner != null)
            {
 
-               spinner.setOnItemSelectedListener(new CustomOnItemSelectedListener());
+               spinner.setOnItemSelectedListener(new CustomOnItemSelectedListener(p.getUser_name(),getContext()));
            }
 
         }

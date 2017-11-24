@@ -16,4 +16,6 @@ public class AppConfig {
 
     // Server get all tattoos url
     public static String URL_GET_ALL_TATTOOS = BASE_URL + "get_all_tattoos.php";
+    // Server get  tattoos details url
+    public static String URL_GET_TATTOO_DETAIL = BASE_URL + "get_tattoo_detail.php";
 }

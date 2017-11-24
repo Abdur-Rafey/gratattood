@@ -37,62 +37,81 @@
             android:layout_marginLeft="10dp"
             />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:orientation="vertical"
-        android:layout_weight="30"
+        android:layout_weight="40"
         android:background="@color/colorWhite"
-        android:weightSum="100">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="30"
-            android:textColor="@color/colorblue"
-            android:text="Shipping method"
-            android:textSize="20dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="10dp"
-            android:layout_margin="10dp"
-            />
-        <com.hrules.horizontalnumberpicker.HorizontalNumberPicker
-            android:id="@+id/horizontal_number_picker2"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+        <RelativeLayout
+            android:id="@+id/relative1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="10"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
-            android:scaleX="1.5"
+            android:layout_weight="2">
 
-            android:scaleY="1.5"
-            android:theme="@style/DefaultNumberPickerTheme"/>
+            <com.gratattood.gratattood.helper.NDSpinner
+                android:id="@+id/spinnerCountry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:entries="@array/country_options"
+                android:gravity="right"
+                android:prompt="@string/country" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+          >
+            <com.gratattood.gratattood.helper.NDSpinner
+                android:id="@+id/spinnerShipMethods"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:entries="@array/shipping_options"
+                android:gravity="right"
+                android:prompt="@string/spinner" />
+
+        </RelativeLayout>
+
         <TextView
+            android:id="@+id/txtMessage"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:layout_weight="30"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
             android:textColor="@color/colorGrey"
-            android:text="order ships in 6 working days, shipment takes an other 10-18 days"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="10dp"
-
-
             />
+        <!--android:text="order ships in 6 working days, shipment takes an other 10-18 days"-->
+
         <TextView
+
+            android:id="@+id/txtShipCost"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:textColor="@color/colorblue"
-            android:text="$178.74"
-            android:layout_weight="30"
-            android:textSize="20dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="10dp"
-            android:gravity="right"
             android:layout_gravity="right"
-            android:layout_marginRight="10dp"
             android:layout_margin="10dp"
-            />
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="$178.74"
+            android:textColor="@color/colorblue"
+            android:textSize="20dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -118,6 +137,7 @@
             android:layout_margin="10dp"
             />
         <TextView
+            android:id="@+id/txtShipDiscount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/colorblue"
@@ -138,7 +158,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
-        android:layout_weight="30"
+        android:layout_weight="20"
         android:orientation="vertical"
         android:background="@color/colorWhite">
 
@@ -173,6 +193,7 @@
                 android:layout_weight="30"
                 android:gravity="right"
                 android:text="Other options"
+                android:onClick="onOtherBtnClicked"
                 android:textColor="@color/colorGrey"
                 android:textSize="15dp" />
 
@@ -203,13 +224,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="NEXT"
+            android:onClick="onNextBtnClicked"
             android:textColor="@color/colorWhite"
             android:textSize="20dp"
-            android:gravity="center"
-
-
-
-            />
+            android:gravity="center"/>
 
     </LinearLayout>
 </LinearLayout>

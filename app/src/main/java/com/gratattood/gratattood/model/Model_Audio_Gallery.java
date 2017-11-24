@@ -1,21 +1,21 @@
-package com.gratattood.gratattood;
+package com.gratattood.gratattood.model;
 
 /**
  * Created by Rafey Sheikh on 10/17/2017.
  */
 
 public class Model_Audio_Gallery {
-    String date;
+    String name;
     String detail;
     String duration;
     String size;
 
-    public String getDate() {
-        return date;
+    public String getName() {
+        return name;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDetail() {

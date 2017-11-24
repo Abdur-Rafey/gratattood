@@ -1,4 +1,4 @@
-package com.gratattood.gratattood;
+package com.gratattood.gratattood.model;
 
 /**
  * Created by Rafey Sheikh on 10/17/2017.
@@ -10,6 +10,15 @@ public class Model_Cart {
     String quantity;
     String quantity_number;
     String price;
+    String tattoo;
+
+    public String getTattoo() {
+        return tattoo;
+    }
+
+    public void setTattoo(String tattoo) {
+        this.tattoo = tattoo;
+    }
 
     public String getPrice() {
         return price;

@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.GridView;
 
+import com.gratattood.gratattood.adapter.MyProfileAdapter;
+
 public class Activity_Profile extends AppCompatActivity {
 
     public Integer[] mThumbIds = {
@@ -44,12 +46,12 @@ public class Activity_Profile extends AppCompatActivity {
                 case R.id.created_tab:
                     GridView gridView1 = (GridView) findViewById(R.id.grid_view);
                     // Instance of ImageAdapter Class
-                    gridView1.setAdapter(new ImageAdapter(Activity_Profile.this,mThumbIds));
+                    gridView1.setAdapter(new MyProfileAdapter(Activity_Profile.this,mThumbIds));
                     return true;
                 case R.id.likes_tab:
                     GridView gridView2 = (GridView) findViewById(R.id.grid_view);
                     // Instance of ImageAdapter Class
-                    gridView2.setAdapter(new ImageAdapter(Activity_Profile.this,mThumbIds1));
+                    gridView2.setAdapter(new MyProfileAdapter(Activity_Profile.this,mThumbIds1));
                     return true;
                 case R.id.account_tab:
 

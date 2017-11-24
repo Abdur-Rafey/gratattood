@@ -24,11 +24,12 @@
             android:layout_weight="0.88">
 
             <ImageView
-                android:id="@+id/backArrow_Message_Activity"
+                android:id="@+id/backArrowActivity"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_alignParentTop="true"
                 android:contentDescription="@null"
+                android:onClick="onBackArrowClicked"
                 android:paddingRight="10dp"
                 app:srcCompat="@drawable/ic_navigation_left_from_media_chooser_header_bar" />
 
@@ -57,6 +58,7 @@
         android:background="@color/colorPrimary">
 
         <TextView
+            android:id="@+id/txtPricePurchase"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -87,19 +89,23 @@
             android:layout_gravity="center"
             android:gravity="center">
 <RadioGroup
+    android:id="@+id/radioGroup1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:gravity="center"
     android:orientation="horizontal">
             <RadioButton
+                android:id="@+id/radio0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Small"
+                android:checked="true"
                 android:textColor="@color/colorblue"
                 android:buttonTint="@color/colorblue"/>
 
             <RadioButton
+                android:id="@+id/radio1"
                 android:buttonTint="@color/colorblue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -145,10 +151,12 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginRight="22dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="20dp"
-                >
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="22dp">
     <android.support.v7.widget.CardView
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -162,6 +170,7 @@
 
         >
     <ImageView
+        android:onClick="onCartBtnClicked"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="#f1b10e"

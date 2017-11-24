@@ -1,6 +1,8 @@
-package com.gratattood.gratattood;
+package com.gratattood.gratattood.helper;
 
 import android.util.Log;
+
+import com.gratattood.gratattood.BuildConfig;
 
 public class DebugLog {
   private static final int LOGGING_TAG_MAX_LENGTH = 23;

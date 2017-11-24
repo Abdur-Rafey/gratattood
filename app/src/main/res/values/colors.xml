@@ -7,5 +7,6 @@
     <color name="colorGrey">#757475</color>
     <color name="colorLifhtGrey">#D8DBDB</color>
     <color name="colorblue">#1e242e</color>
+    <color name="colorblack">#000000</color>
     <color name="colorRed">#ef211e</color>
 </resources>

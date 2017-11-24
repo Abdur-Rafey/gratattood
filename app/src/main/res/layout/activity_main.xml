@@ -44,6 +44,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="PERSONALIZE"
+                    android:onClick="onClickPersonalizeBtn"
                     android:textColor="@color/colorWhite"
                     android:textStyle="bold" />
 
@@ -54,6 +55,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="SHOP"
+                    android:onClick="onClickShopBtn"
                     android:textColor="@color/colorWhite"
                     android:textStyle="bold" />
             </LinearLayout>

@@ -1,4 +1,4 @@
-package com.gratattood.gratattood;
+package com.gratattood.gratattood.model;
 
 /**
  * Created by Rafey Sheikh on 10/12/2017.
